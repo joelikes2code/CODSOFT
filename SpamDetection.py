@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 
 def load_and_clean_data(file_path):
     print(f"Loading {file_path}...")
-    try:
+    try:    
         df = pd.read_csv(file_path, encoding='latin-1')
 
         df = df.drop(columns=['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], errors='ignore')
